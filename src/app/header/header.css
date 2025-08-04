@@ -1,0 +1,59 @@
+.app-header {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;        /* bigger text */
+  font-weight: 700;       /* bold */
+  text-transform: uppercase; /* optional: all caps */
+  color: black;           /* white text for dark header */
+  letter-spacing: 2px;    /* more space between letters */
+  text-decoration: none;  /* remove underline */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.app-header nav {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around; /* add this */
+  font-size: 17px;
+}
+
+.app-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.app-header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.app-header nav ul li a {
+  position: relative;
+  text-decoration: none; 
+  color: black; 
+}
+
+.app-header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 0%;
+  height: 2px; 
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.app-header nav ul li a:hover::after {
+  width: 100%;
+}

@@ -16,10 +16,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -74,10 +71,7 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -86,5 +80,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c934edce-c2b5-4d47-ae51-196a3d0bdd45"
   }
 }

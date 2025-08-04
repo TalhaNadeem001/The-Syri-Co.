@@ -1,0 +1,179 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-div {
+  position: relative;  /* Make this container a positioning context */
+  display: inline-block; /* or block, depending on your layout */
+}
+
+.image-div img {
+  display: block;      /* remove inline spacing */
+  width: 100%;         /* adjust as needed */
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+
+  pointer-events: none;
+
+  max-width: 40%; /* reduce text box width */
+}
+
+.mission-div {
+  background: transparent;  
+  color: black;  
+  text-align: center;  
+  max-width: 700px;  
+  margin: -30px auto 0;  /* pushes div 30px up */
+  padding: 20px;  
+}
+
+.mission-div h2 {
+  font-size: 2.3rem;  
+  margin-bottom: 15px;  
+  font-weight: bold;
+}
+
+.mission-div p {
+  font-size: 1.4rem;  
+  line-height: 1.6;  
+  color: rgba(0, 0, 0, 0.85);  
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #31bfb8;
+  padding: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 80px;
+}
+
+.service-box {
+  flex: 1;
+  max-width: 300px;
+  border-left: 1px solid #FFFFFF;
+  padding: 20px;
+}
+
+.service-box:first-child {
+  border-left: none; /* No border on first box */
+}
+
+.service-icon {
+  width: 100px;   /* increase size */
+  height: auto;   /* keep proportions */
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.service-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-box li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+  .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0;
+      flex: 1;
+    }
+
+    .section-content {
+      flex: 1.2;
+    }
+
+    .section-content p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #555; /* softer gray text for paragraph */
+    }
+
+    .section-content a {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid black;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .section-content a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    hr {
+    border: none;
+    border-top: 1px solid #000; /* line color */
+    width: 100%;
+    margin: 20px 0; /* spacing above/below */
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .section h1 {
+        margin-bottom: 20px;
+      }
+    }
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .service-box:first-child {
+    border-top: none;
+  }
+}
