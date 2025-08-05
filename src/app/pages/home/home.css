@@ -104,6 +104,8 @@
       padding: 80px;
       max-width: 1200px;
       margin: auto;
+      margin-top: 10px;
+      margin-bottom: -5px;
     }
 
     .section h1 {
@@ -150,6 +152,68 @@
         display: flex;
         gap: 10px;
     }
+
+  .service-page-section {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .service-page-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+  }
+
+  .service-page-heading::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background: #31bfb8;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+
+  .service-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .service-page-box {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid transparent;
+  }
+
+  .service-page-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    border-top: 5px solid #31bfb8;
+  }
+
+  .service-page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: black;
+  }
+
+  .service-page-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
 
     @media (max-width: 768px) {
       .section {
