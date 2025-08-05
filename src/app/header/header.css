@@ -4,8 +4,8 @@
   padding: 10px;
   margin-top: 15px;
   width: 100%;
-  position: absolute;
-  z-index: 10;
+  position: static; /* or just remove position entirely */
+  z-index: auto;   /* default stacking */
 }
 
 .logo {
